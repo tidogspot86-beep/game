@@ -77,7 +77,7 @@ function game() {
 
      alert(
       "🤖 The computer has locked in its choice and keep it hidden!\n\n" +
-      "Press OK to know the winner."
+      "Press OK or CLOSE to know the winner."
     );
 
 
