@@ -76,7 +76,7 @@ function game() {
     const computerSelection = computerPlay();
 
      alert(
-      "🤖 The computer has locked in its choice and keep it hidden!\n\n" +
+      "The computer has locked in its choice and keep it hidden!\n\n" +
       "Press OK or CLOSE to know the winner."
     );
 
@@ -96,7 +96,7 @@ function game() {
       playerScore++;
 
       alert(
-        `You win this round! 🎉\n\n${playerInput} beats ${computerSelection}.\n\nScore: You ${playerScore} - ${computerScore} Computer`
+        `You win this round! \n\n${playerInput} beats ${computerSelection}.\n\nScore: You ${playerScore} - ${computerScore} Computer`
       );
 
       console.log("You won the round!");
@@ -113,13 +113,13 @@ function game() {
 
   if (playerScore === 3) {
     alert(
-      `🏆 You won the game!\n\nFinal score:\nYou ${playerScore} - ${computerScore} Computer`
+      `You won the game!\n\nFinal score:\nYou ${playerScore} - ${computerScore} Computer`
     );
 
     console.log("You are the champion!");
   } else {
     alert(
-      `🤖 The computer won the game!\n\nFinal score:\nYou ${playerScore} - ${computerScore} Computer`
+      `The computer won the game!\n\nFinal score:\nYou ${playerScore} - ${computerScore} Computer`
     );
 
     console.log("The computer is the champion!");
