@@ -45,7 +45,7 @@ function game() {
 
   while (playerScore < 3 && computerScore < 3) { //keeps teh game while player and computer have less than 3 rounds 
     let playerInput = prompt(
-      `Score: You ${playerScore} - ${computerScore} Computer\n\nChoose Rock, Paper, or Scissors:`
+      `Score: You ${playerScore} - ${computerScore} Computer\n\nThe computer has locked in its choice and keep it hidden\n\nChoose Rock, Paper, or Scissors:`
     );
 
     if (playerInput === null) { // if player cancels the game 
@@ -76,7 +76,7 @@ function game() {
     const computerSelection = computerPlay();
 
      alert(
-      "The computer has locked in its choice and keep it hidden!\n\n" +
+      
       "Press OK or CLOSE to know the winner."
     );
 
@@ -104,7 +104,7 @@ function game() {
       computerScore++;
 
       alert(
-        `The computer wins this round! 🤖\n\n${computerSelection} beats ${playerInput}.\n\nScore: You ${playerScore} - ${computerScore} Computer`
+        `The computer wins this round! \n\n${computerSelection} beats ${playerInput}.\n\nScore: You ${playerScore} - ${computerScore} Computer`
       );
 
       console.log("Computer won the round.");
